@@ -9,7 +9,7 @@
     "url": "https://opensource.org/licenses/MIT"
     }
     },
-    "host": "proyecto-server.onrender.com",
+    "host": "proyecto-server2.onrender.com",
     "basePath": "",
     "tags": [
         {
@@ -264,7 +264,7 @@
                                 "nombre":"Juan Perez",    
                                 "telefono": "9531555416",
                                 "correo": "juan@gmail.com",
-                                "contraseña": "1234"
+                                "contrasenia": "1234"
                             }
                         ]
                         }, "schema": {
@@ -289,7 +289,7 @@
                                     "description": "Correo del usuario(maximo 100 caracteres)",
                                     "default": "ana@gmail.com"
                                 },
-                                "contrasena": {
+                                "contrasenia": {
                                     "type": "string",
                                     "description": "Contraseña del usuario (maximo de 100 caracteres)",
                                     "default": "clave456"
