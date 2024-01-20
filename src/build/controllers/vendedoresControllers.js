@@ -52,13 +52,13 @@ class VendedoresController {
             res.json(resp);
         });
     }
-    iniciarSesion(req, res) {
+    iniciarSesionV(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const parametros = req.body;
             var consulta = `SELECT correo FROM vendedor WHERE correo = '${parametros.correo}' and contrasenia = '${parametros.contrasenia}'`;
             const resp = yield database_1.default.query(consulta);
             if (resp.length > 0) {
-                res.json(consulta[0]);
+                res.json(resp);
             }else{
                 res.json("0");
                 

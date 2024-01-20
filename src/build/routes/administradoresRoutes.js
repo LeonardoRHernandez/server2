@@ -13,6 +13,7 @@ class AdministradoresRoutes {
         this.router.get('/mostrarAdministrador/:id', administradoresControllers_1.administradorController.listarUno);
         this.router.put('/actualizarAdministrador/:id', administradoresControllers_1.administradorController.actualizar);
         this.router.delete('/eliminarAdministrador/:id', administradoresControllers_1.administradorController.eliminar);
+        this.router.post('/iniciarSesionA/', administradoresControllers_1.administradorController.iniciarSesionA);
 
     }
 }

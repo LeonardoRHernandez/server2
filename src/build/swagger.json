@@ -249,7 +249,7 @@
                 ]
             }
         },
-        "/api/usuarios/iniciarSesion/": 
+        "/api/usuarios/iniciarSesionU/": 
         {
             "post": {
                 "tags": ["Usuarios"], 
@@ -495,6 +495,58 @@
                         "type": "number",
                         "default": "4"
                     }
+                ]
+            }
+        },
+        "/api/vendedores/iniciarSesionV/": 
+        {
+            "post": {
+                "tags": ["Vendedores"], 
+                "summary": "validar al Vendedores",
+                "description": "valida y devuelve los datos del Vendedores si es que este existe",
+                "responses": {
+                    "200": {
+                        "description": "Pr0cedimiento Exitoso",
+                        "examples": {"application/json": [
+                            {
+                                "id": 3,
+                                "nombre":"Juan Perez",    
+                                "telefono": "9531555416",
+                                "correo": "juan@gmail.com",
+                                "contrasenia": "1234"
+                            }
+                        ]
+                        }, "schema": {
+                            "$ref": "#/definitions/verificar"
+                        }
+                    },
+                    "403": {
+                        "description": "Prohibido"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "Vendedores",
+                        "in": "body",
+                        "description": "Vendedores agregado",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "correo": {
+                                    "type": "string",
+                                    "description": "Correo del Vendedores(maximo 100 caracteres)",
+                                    "default": "ana@gmail.com"
+                                },
+                                "contrasenia": {
+                                    "type": "string",
+                                    "description": "Contraseña del Vendedores (maximo de 100 caracteres)",
+                                    "default": "clave456"
+                                }
+                            }
+                        }
+                    }
+                    
                 ]
             }
         },
@@ -1518,6 +1570,58 @@
                         "type": "number",
                         "default": "4"
                     }
+                ]
+            }
+        },
+        "/api/administradores/iniciarSesionA/": 
+        {
+            "post": {
+                "tags": ["administrador"], 
+                "summary": "validar al administrador",
+                "description": "valida y devuelve los datos del administrador si es que este existe",
+                "responses": {
+                    "200": {
+                        "description": "Pr0cedimiento Exitoso",
+                        "examples": {"application/json": [
+                            {
+                                "id": 3,
+                                "nombre":"Juan Perez",    
+                                "telefono": "9531555416",
+                                "correo": "juan@gmail.com",
+                                "contrasenia": "1234"
+                            }
+                        ]
+                        }, "schema": {
+                            "$ref": "#/definitions/verificar"
+                        }
+                    },
+                    "403": {
+                        "description": "Prohibido"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "administrador",
+                        "in": "body",
+                        "description": "administrador agregado",
+                        "required": true,
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "correo": {
+                                    "type": "string",
+                                    "description": "Correo del administrador(maximo 100 caracteres)",
+                                    "default": "ana@gmail.com"
+                                },
+                                "contrasenia": {
+                                    "type": "string",
+                                    "description": "Contraseña del administrador (maximo de 100 caracteres)",
+                                    "default": "clave456"
+                                }
+                            }
+                        }
+                    }
+                    
                 ]
             }
         }
