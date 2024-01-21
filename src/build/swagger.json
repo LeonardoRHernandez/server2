@@ -1841,7 +1841,7 @@
 
         "casa":
         {
-            "type": "object",
+            "type": "multipart/form-data",
             "properties":
             {
                 "id":
@@ -1888,7 +1888,7 @@
         },
         "NuevaCasa":
         {
-            "type": "object",
+            "type": "multipart/form-data",
             "properties":
             {
                 "id":
@@ -2011,7 +2011,7 @@
 
         "mas_info":
         {
-            "type": "object",
+            "type": "multipart/form-data",
             "properties":
             {
                 "id_info":
@@ -2047,7 +2047,7 @@
         },
         "NuevoInfo":
         {
-            "type": "object",
+            "type": "multipart/form-data",
             "properties":
             {
                 "id_casaInfo":
