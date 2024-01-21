@@ -1841,7 +1841,7 @@
 
         "casa":
         {
-            "type": "multipart/form-data",
+            "type": "object",
             "properties":
             {
                 "id":
@@ -1868,12 +1868,6 @@
                 {
                     "type": "string",
                     "description": "Guarda una descripcion de la casa."
-                },
-                "img":
-                {
-                    "type": "string",
-                    "format":"binary",
-                    "description": "Guarda una imagen de la casa."
                 }
             }
         },
@@ -1888,7 +1882,7 @@
         },
         "NuevaCasa":
         {
-            "type": "multipart/form-data",
+            "type": "object",
             "properties":
             {
                 "id":
@@ -1915,12 +1909,6 @@
                 {
                     "type": "string",
                     "description": "Guarda una descripcion de la casa."
-                },
-                "img":
-                {
-                    "type": "string",
-                    "format":"binary",
-                    "description": "Guarda una imagen de la casa."
                 }
             }
         },
@@ -2011,7 +1999,7 @@
 
         "mas_info":
         {
-            "type": "multipart/form-data",
+            "type": "object",
             "properties":
             {
                 "id_info":
@@ -2028,12 +2016,6 @@
                 {
                     "type": "string",
                     "description": "Descripcion a detalle de la propiedad"
-                },
-                "img":
-                {
-                    "type": "string",
-                    "format":"binary",
-                    "description": "Guarda una imagen de la casa."
                 }
             }
         },
@@ -2047,7 +2029,7 @@
         },
         "NuevoInfo":
         {
-            "type": "multipart/form-data",
+            "type": "object",
             "properties":
             {
                 "id_casaInfo":
@@ -2059,12 +2041,6 @@
                 {
                     "type": "string",
                     "description": "Descripcion a detalle de la propiedad"
-                },
-                "img":
-                {
-                    "type": "string",
-                    "format":"binary",
-                    "description": "Guarda una imagen de la casa."
                 }
             }
         },

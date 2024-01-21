@@ -25,7 +25,7 @@ class Mas_infoController{
     listarUno(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const { id } = req.params;
-            const respuesta = yield database_1.default.query('SELECT mas_info.id_info, mas_info.id_casainfo, mas_info.descripcion_detallada, mas_info.img FROM mas_info, casas WHERE mas_info.id_casainfo = casas.id AND mas_info.id_info = ?;', [id]);
+            const respuesta = yield database_1.default.query('SELECT mas_info.id_info, mas_info.id_casainfo, mas_info.descripcion_detallada FROM mas_info, casas WHERE mas_info.id_casainfo = casas.id AND mas_info.id_info = ?;', [id]);
             if (respuesta.length > 0) {
                 res.json(respuesta[0]);
                 return;
