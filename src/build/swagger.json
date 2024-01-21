@@ -1871,7 +1871,8 @@
                 },
                 "img":
                 {
-                    "type": "LONGBLOB",
+                    "type": "string",
+                    "format":"binary",
                     "description": "Guarda una imagen de la casa."
                 }
             }
@@ -1917,7 +1918,8 @@
                 },
                 "img":
                 {
-                    "type": "LONGBLOB",
+                    "type": "string",
+                    "format":"binary",
                     "description": "Guarda una imagen de la casa."
                 }
             }
@@ -2029,7 +2031,8 @@
                 },
                 "img":
                 {
-                    "type": "LONGBLOB",
+                    "type": "string",
+                    "format":"binary",
                     "description": "Guarda una imagen de la casa."
                 }
             }
@@ -2059,7 +2062,8 @@
                 },
                 "img":
                 {
-                    "type": "LONGBLOB",
+                    "type": "string",
+                    "format":"binary",
                     "description": "Guarda una imagen de la casa."
                 }
             }
