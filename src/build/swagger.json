@@ -571,14 +571,16 @@
                                     "precio":"16367347",
                                     "baños": "2",
                                     "habitaciones": "4",
-                                    "descripcion": "Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie"
+                                    "descripcion": "Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie",
+                                    "img": "imagen"
                                 },
                                 {
                                     "id": 4,
                                     "precio":"16367347",
                                     "baños": "3",
                                     "habitaciones": "5",
-                                    "descripcion": "Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie"
+                                    "descripcion": "Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie",
+                                    "img": "imagen"
                                 }
                             ]
                         },
@@ -648,7 +650,8 @@
                                     "precio":"16367347",
                                     "baños": "2",
                                     "habitaciones": "4",
-                                    "descripcion": "Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie"
+                                    "descripcion": "Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie",
+                                    "img": "imagen"
                                 }
                             ]
                         },
@@ -847,12 +850,14 @@
                                 {
                                     "id_info": 1,
                                     "id_casainfo":2,
-                                    "descripcion_detallada": "lorem ipsum dolor sit amet, consectetur"
+                                    "descripcion_detallada": "lorem ipsum dolor sit amet, consectetur",
+                                    "img": "imagen"
                                 },
                                 {
                                     "id_info": 1,
                                     "id_casainfo":2,
-                                    "descripcion_detallada": "lorem ipsum dolor sit amet, consectetur"
+                                    "descripcion_detallada": "lorem ipsum dolor sit amet, consectetur",
+                                    "img": "imagen"
                                 }
                             ]
                         },
@@ -886,7 +891,8 @@
                                 {
                                     "id_info": 1,
                                     "id_casainfo":2,
-                                    "descripcion_detallada": "lorem ipsum dolor sit amet, consectetur"
+                                    "descripcion_detallada": "lorem ipsum dolor sit amet, consectetur",
+                                    "img": "imagen"
                                 }
                             ]
                         },
@@ -1862,6 +1868,11 @@
                 {
                     "type": "string",
                     "description": "Guarda una descripcion de la casa."
+                },
+                "img":
+                {
+                    "type": "LONGBLOB",
+                    "description": "Guarda una imagen de la casa."
                 }
             }
         },
@@ -1903,6 +1914,11 @@
                 {
                     "type": "string",
                     "description": "Guarda una descripcion de la casa."
+                },
+                "img":
+                {
+                    "type": "LONGBLOB",
+                    "description": "Guarda una imagen de la casa."
                 }
             }
         },
@@ -2010,6 +2026,11 @@
                 {
                     "type": "string",
                     "description": "Descripcion a detalle de la propiedad"
+                },
+                "img":
+                {
+                    "type": "LONGBLOB",
+                    "description": "Guarda una imagen de la casa."
                 }
             }
         },
@@ -2035,6 +2056,11 @@
                 {
                     "type": "string",
                     "description": "Descripcion a detalle de la propiedad"
+                },
+                "img":
+                {
+                    "type": "LONGBLOB",
+                    "description": "Guarda una imagen de la casa."
                 }
             }
         },
