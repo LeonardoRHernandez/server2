@@ -568,6 +568,7 @@
                             "application/json": [
                                 {
                                     "id": 3,
+                                    "nombre":"de lujo",
                                     "precio":"16367347",
                                     "baños": "2",
                                     "habitaciones": "4",
@@ -576,6 +577,7 @@
                                 },
                                 {
                                     "id": 4,
+                                    "nombre":"de lujo",
                                     "precio":"16367347",
                                     "baños": "3",
                                     "habitaciones": "5",
@@ -647,6 +649,7 @@
                             [
                                 {
                                     "id": 3,
+                                    "nombre":"de lujo",
                                     "precio":"16367347",
                                     "baños": "2",
                                     "habitaciones": "4",
@@ -1848,6 +1851,10 @@
                 {
                     "type": "number",
                     "description": "Codigo unico que permite identificar al vendedor."
+                },"nombre":
+                {
+                    "type": "string",
+                    "description": "Guarda el nombre de la casa."
                 },
                 "precio":
                 {
@@ -1889,6 +1896,10 @@
                 {
                     "type": "number",
                     "description": "Codigo unico que permite identificar al vendedor."
+                },"nombre":
+                {
+                    "type": "string",
+                    "description": "Guarda el nombre del administrador."
                 },
                 "precio":
                 {
