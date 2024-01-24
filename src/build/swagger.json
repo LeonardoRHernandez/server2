@@ -571,6 +571,7 @@
                                     "nombre":"de lujo",
                                     "precio":"16367347",
                                     "baños": "2",
+                                    "estacionamiento":"2",
                                     "habitaciones": "4",
                                     "descripcion": "Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie",
                                     "img": "imagen"
@@ -580,6 +581,7 @@
                                     "nombre":"de lujo",
                                     "precio":"16367347",
                                     "baños": "3",
+                                    "estacionamiento":"2",
                                     "habitaciones": "5",
                                     "descripcion": "Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie",
                                     "img": "imagen"
@@ -652,6 +654,7 @@
                                     "nombre":"de lujo",
                                     "precio":"16367347",
                                     "baños": "2",
+                                    "estacionamiento":"2",
                                     "habitaciones": "4",
                                     "descripcion": "Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie",
                                     "img": "imagen"
@@ -1850,7 +1853,7 @@
                 "id":
                 {
                     "type": "number",
-                    "description": "Codigo unico que permite identificar al vendedor."
+                    "description": "Codigo unico que permite identificar a la casa."
                 },"nombre":
                 {
                     "type": "string",
@@ -1865,6 +1868,11 @@
                 {
                     "type": "number",
                     "description": "Guarda la cantidad de baños."
+                },
+                "estacionamiento":
+                {
+                    "type": "number",
+                    "description": "Guarda la cantidad de estacionamientos."
                 },
                 "habitaciones":
                 {
@@ -1895,11 +1903,11 @@
                 "id":
                 {
                     "type": "number",
-                    "description": "Codigo unico que permite identificar al vendedor."
+                    "description": "Codigo unico que permite identificar a la casa."
                 },"nombre":
                 {
                     "type": "string",
-                    "description": "Guarda el nombre del administrador."
+                    "description": "Guarda el nombre de la casa."
                 },
                 "precio":
                 {
@@ -1910,6 +1918,11 @@
                 {
                     "type": "number",
                     "description": "Guarda la cantidad de baños."
+                },
+                "estacionamiento":
+                {
+                    "type": "number",
+                    "description": "Guarda la cantidad de estacionamientos."
                 },
                 "habitaciones":
                 {
