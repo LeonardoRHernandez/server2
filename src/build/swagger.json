@@ -41,6 +41,10 @@
             "description": "API para realizar la cita de una propiedad de la empresa Bienes_raices"
         },
         {
+            "name": "carrito",
+            "description": "API para realizar el carrito de una propiedad de la empresa Bienes_raices"
+        },
+        {
             "name": "administrador",
             "description": "API para realizar el CRUD de administradores de la empresa Bienes_raices"
         }
@@ -1347,8 +1351,6 @@
                 ]
             }
         },
-
-
         "/api/citas/mostrarCitas/{id}":
         {
             "get": {
@@ -1392,6 +1394,108 @@
                 ]
             }
         },
+        
+
+
+        "/api/carrito/mostrarCarrito/":
+        {
+            "get": {
+                "tags": ["carrito"],
+                "summary": "Listado del carrito en la app de Bienes_raices",
+                "description": "<p>Servicio que devuelve la información del carrito de Bienes_raices</p><p>&nbsp;</p><p><em><strong>¿Cuál es el carrito de Bienes_raices?</strong></em></p>",
+                "responses": 
+                {
+                    "200":
+                    {
+                        "description": "OK",
+                        "examples":
+                        {
+                            "application/json": [
+                                {
+                                    "id": 1,
+                                    "id_casaCarrito":5
+                                },
+                                {
+                                    "id": 2,
+                                    "id-casaCarrito":1
+                                }
+                            ]
+                        },
+                        "schema":
+                        {
+                            "$ref": "#/definitions/carritos"
+                        }
+                    },
+                    "403":
+                    {
+                        "description": "Prohibido"
+                    }
+                }
+            }
+        },
+        "/api/carrito/crearCarrito/":
+        {
+            "post":
+            {
+                "summary":"Agrega una nueva propiedad en el carrito de Bienes_raices  .",
+                "operationId": "create",
+                "produces": 
+                [
+                    "application/json"
+                ],
+                "parameters":
+                [
+                    {
+                        "name": "carrito",
+                        "in": "body",
+                        "description": "carrito a agregar.",
+                        "required": true,
+                        "schema":
+                        {
+                            "$ref" : "#/definitions/NuevaCarrito"
+                        }
+                    }
+                ],
+                "tags": ["carrito"],
+                "responses":
+                {
+                    "201": {
+                        "description": "OK"
+                    },
+                    "403": {
+                        "description": "Prohibido"
+                    }
+                }
+            }
+        },
+        "/api/carrito/eliminarCarrito/{id}":
+        {
+            "delete": {
+                "tags": ["carrito"],
+                "summary": "Eliminar una propiedad el carrito",
+                "description": "<p>Servicio que elimina una propiedad del carrito de  Bienes_raices</p> <p>&nbsp;</p> <p><em><strong>¿Como eliminar una propiedad del carrito de Bienes_raices?</strong></em></p>",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "403": {
+                        "description": "Prohibido"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "description": "Id de la informacion a eliminar.",
+                        "type": "number",
+                        "default": "4"
+                    }
+                ]
+            }
+        },
+
+
         "/api/Administradores/mostrarAdministradores/":
         {
             "get": {
@@ -2221,6 +2325,44 @@
                 {
                     "type": "string",
                     "description": "Contrasenia"
+                }
+            }
+        },
+
+        "carrito":
+        {
+            "type": "object",
+            "properties":
+            {
+                "id":
+                {
+                    "type": "number",
+                    "description": "Codigo unico que permite identificar la cita."
+                },
+                "id_casaCarrito":
+                {
+                    "type": "number",
+                    "description": "Continene el ID  de la casa en la que se agrego al carrito"
+                }
+            }
+        },
+        "carritos":
+        {
+            "type": "array",
+            "items":
+            {
+                "$ref": "#/definitions/carrito"
+            }
+        },
+        "NuevaCarrito":
+        {
+            "type": "object",
+            "properties":
+            {
+                "id_casaCarrito":
+                {
+                    "type": "number",
+                    "description": "Continene el ID  de la casa en la que se agrego al carrito"
                 }
             }
         }

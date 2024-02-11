@@ -17,6 +17,7 @@ const nosotrosRoutes_1 = __importDefault(require("./routes/nosotrosRoutes"));
 const mas_infoRoutes_1 = __importDefault(require("./routes/mas_infoRoutes"));
 const comprasRoutes_1 = __importDefault(require("./routes/comprasRoutes"));
 const citasRoutes_1 = __importDefault(require("./routes/citasRoutes"));
+const carritoRoutes_1 = __importDefault(require("./routes/carritoRoutes"));
 
 class Server {
     constructor() {
@@ -41,6 +42,7 @@ class Server {
         this.app.use('/api/mas_info', mas_infoRoutes_1.default);
         this.app.use('/api/compras', comprasRoutes_1.default);
         this.app.use('/api/citas', citasRoutes_1.default);
+        this.app.use('/api/carrito', carritoRoutes_1.default);
         this.app.use('/api/administradores', administradoresRoutes_1.default);
     }
     start() {
