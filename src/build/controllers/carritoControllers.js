@@ -18,7 +18,7 @@ const database_1 = __importDefault(require("../database")); //acceso a la base d
 class CarritoController{
     listar(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            const respuesta = yield database_1.default.query('SELECT * FROM carrito');
+            const respuesta = yield database_1.default.query('SELECT carrito.id,carrito.id_casaCarrito,casas.nombre,casas.precio, casas.banios,casas.estacionamiento,casas.habitaciones,casas.descripcion FROM carrito JOIN casas ON carrito.id_casaCarrito = casas.id;');
             res.json(respuesta);
         });
     }

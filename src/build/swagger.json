@@ -1958,7 +1958,8 @@
                 {
                     "type": "number",
                     "description": "Codigo unico que permite identificar a la casa."
-                },"nombre":
+                },
+                "nombre":
                 {
                     "type": "string",
                     "description": "Guarda el nombre de la casa."
@@ -2343,6 +2344,36 @@
                 {
                     "type": "number",
                     "description": "Continene el ID  de la casa en la que se agrego al carrito"
+                },
+                "nombre":
+                {
+                    "type": "string",
+                    "description": "Guarda el nombre de la casa."
+                },
+                "precio":
+                {
+                    "type": "number",
+                    "description": "Guarda el precio de la casa."
+                },
+                "baños":
+                {
+                    "type": "number",
+                    "description": "Guarda la cantidad de baños."
+                },
+                "estacionamiento":
+                {
+                    "type": "number",
+                    "description": "Guarda la cantidad de estacionamientos."
+                },
+                "habitaciones":
+                {
+                    "type": "number",
+                    "description": "Guarda la cantidad de habitaciones."
+                },
+                "descripcion":
+                {
+                    "type": "string",
+                    "description": "Guarda una descripcion de la casa."
                 }
             }
         },
